@@ -44,7 +44,24 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 ## Dependencias <a name="dependencies"></a>
 
-Se están determinando las dependencias...
+Las dependencias están sujetas a cambios conforme se avanza en el proyecto, por el momento tales son:
+
+- SoX
+```
+sudo apt-get install sox
+```
+- python3
+```
+sudo apt-get install python3
+```
+- python3-numpy
+```
+sudo apt-get install python3-numpy
+```
+- python3-pandas
+```
+sudo apt-get install python3-pandas
+```
 
 ## Instalar el proyecto <a name="install"></a>
 
@@ -53,6 +70,8 @@ Clonar el repositorio del proyecto con:
 ```
 git clone https://github.com/leus8/ie0499-GAVisualizer.git
 ```
+
+> Para seguir con los siguentes pasos asegurarse que se han instalado todas las [Dependencias](#dependencies)
 
 ...
 
