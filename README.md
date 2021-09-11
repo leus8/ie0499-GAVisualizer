@@ -77,4 +77,4 @@ git clone https://github.com/leus8/ie0499-GAVisualizer.git
 
 ## Notas hacia los profesores guía y lectores <a name="avisos"></a>
 
-En caso de dudas y recomendaciones pueden levantar un *issue* aquí en GitHub o me pueden contacter por correo/telegram.
+En caso de dudas y recomendaciones pueden levantar un *issue* aquí en GitHub o me pueden contactar por correo/telegram.
