@@ -34,13 +34,13 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 ##### Académicas
 
-* Capítulo I del avance del proyecto
+* Capítulo I del avance del proyecto [En revisión por los profesores]
 
 #### Desarrollo de software
 
-* Se está considerando migrar el proyecto de GNU Make a disutils/setuptools (ojalá aunque sea al final del desarrollo para distribución) esto con el propósito de poder instalar mediante pip pensando en trabajos futuros.
+* Determinar dependencias [En constante cambio todavía]
 
-* Determinar dependencias
+* Diagramas de flujo del programa
 
 ## Dependencias <a name="dependencies"></a>
 
