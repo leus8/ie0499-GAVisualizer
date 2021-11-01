@@ -62,6 +62,16 @@ sudo apt-get install python3-numpy
 ```
 sudo apt-get install python3-pandas
 ```
+- Plotly
+```
+pip install plotly
+```
+- Dash
+```
+pip install dash
+```
+
+Las dependencias pandas y numpy también pueden ser instaladas por medio de pip
 
 ## Instalar el proyecto <a name="install"></a>
 
