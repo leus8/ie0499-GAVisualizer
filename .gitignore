@@ -2,3 +2,6 @@ segmentation/audio1.wav
 segmentation/audios/*
 segmentation/__pycache__/*
 segmentation/splitted90000/*
+dashboard/dashboard_prueba.py
+dashboard/first_figure.html
+dashboard/txt
