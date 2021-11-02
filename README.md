@@ -34,13 +34,14 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 ##### Académicas
 
-* Capítulo I del avance del proyecto [En revisión por los profesores]
+* Avance II del proyecto eléctrico
 
 #### Desarrollo de software
 
-* Determinar dependencias [En constante cambio todavía]
+> La funcionalidad básica está funcionando
 
-* Diagramas de flujo del programa
+* Mejorar el diseño (que se vea más bonito)
+* Mejorar un poco la operación e interacción con el segmentador de audios
 
 ## Dependencias <a name="dependencies"></a>
 
@@ -90,7 +91,14 @@ Para correr el script de python que realiza segmentación de audios de larga dur
 python3 segmentation/main.py
 ```
 Una vez realizada la segmentación se obtiene un archivo `results.csv` con toda la información a ser visualizada
-...
+
+> Para seguir con los siguientes pasos se tiene que haber corrido el segmentador o incluir de forma externa un archivo .csv llamado results.csv dentro del directorio  segmentation
+
+Para correr el visualizador, `en una nueva terminal` se debe correr el siguiente comando:
+```
+python3 dashboard/dashboard.csv
+```
+Una vez introducido lo anterior se debe colocar la dirección IP mostrada en su navegador favorito y se observará el visualizador.
 
 ## Notas hacia los profesores guía y lectores <a name="avisos"></a>
 
