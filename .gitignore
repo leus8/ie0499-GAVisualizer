@@ -1,0 +1,4 @@
+segmentation/audio1.wav
+segmentation/audios/*
+segmentation/__pycache__/*
+segmentation/splitted90000/*
