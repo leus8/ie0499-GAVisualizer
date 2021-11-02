@@ -83,6 +83,13 @@ git clone https://github.com/leus8/ie0499-GAVisualizer.git
 
 > Para seguir con los siguentes pasos asegurarse que se han instalado todas las [Dependencias](#dependencies)
 
+Primero se debe realizar la segmentación, para esto agregar el audio a segmentar en `segmentation/`
+
+Para correr el script de python que realiza segmentación de audios de larga duración mediante algoritmos genéticos:
+```
+python3 segmentation/main.py
+```
+Una vez realizada la segmentación se obtiene un archivo `results.csv` con toda la información a ser visualizada
 ...
 
 ## Notas hacia los profesores guía y lectores <a name="avisos"></a>
