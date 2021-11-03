@@ -47,21 +47,25 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 Las dependencias están sujetas a cambios conforme se avanza en el proyecto, por el momento tales son:
 
-- SoX
-```
-sudo apt-get install sox
-```
 - python3
 ```
 sudo apt-get install python3
 ```
+- pip (Python packet manager)
+```
+sudo apt-get install python3-pip
+```
+- SoX
+```
+pip install sox
+```
 - python3-numpy
 ```
-sudo apt-get install python3-numpy
+pip install numpy
 ```
 - python3-pandas
 ```
-sudo apt-get install python3-pandas
+pip install pandas
 ```
 - Plotly
 ```
