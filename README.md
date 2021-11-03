@@ -40,8 +40,9 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 > La funcionalidad básica está funcionando
 
-* Mejorar el diseño (que se vea más bonito)
-* Mejorar un poco la operación e interacción con el segmentador de audios
+* Arreglar el redondeo de los valores y dimensiones de las cantidades
+* Agregar sección que muestre cómo utilizar el dashboard
+* Arreglar ejes de las gráficas
 
 ## Dependencias <a name="dependencies"></a>
 
