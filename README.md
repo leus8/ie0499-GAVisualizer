@@ -94,12 +94,15 @@ Una vez realizada la segmentación se obtiene un archivo `results.csv` con toda 
 
 > Para seguir con los siguientes pasos se tiene que haber corrido el segmentador o incluir de forma externa un archivo .csv llamado results.csv dentro del directorio  segmentation
 
-Para correr el visualizador, `en una nueva terminal` se debe correr el siguiente comando:
+Para correr el visualizador, `en una nueva terminal` se debe cambiar al directorio `dashboard` y correr el comando:
 ```
-python3 dashboard/dashboard.csv
+python3 dashboard.py
 ```
-Una vez introducido lo anterior se debe colocar la dirección IP mostrada en su navegador favorito y se observará el visualizador.
-
+Una vez introducido lo anterior se le mostrará un mensaje en la terminal con un mensaje similar a:
+```
+Dash is running on <url>
+```
+Este `url` debe insertarse en su navegador de preferencia y finalmente estaría en el dashboard.
 ## Notas hacia los profesores guía y lectores <a name="avisos"></a>
 
 En caso de dudas y recomendaciones pueden levantar un *issue* aquí en GitHub o me pueden contactar por correo/telegram.
