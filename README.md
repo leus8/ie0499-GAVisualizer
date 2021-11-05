@@ -32,7 +32,7 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 ### Tareas a realizar:
 
-##### Académicas
+#### Académicas
 
 * Avance II del proyecto eléctrico
 
@@ -43,6 +43,8 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 * Arreglar el redondeo de los valores y dimensiones de las cantidades
 * Agregar sección que muestre cómo utilizar el dashboard
 * Arreglar ejes de las gráficas
+* Agregar un espacio más de gráficas (si sobra tiempo)
+* Mejorar el diseño (si sobra tiempo)
 
 ## Dependencias <a name="dependencies"></a>
 
