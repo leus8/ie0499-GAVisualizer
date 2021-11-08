@@ -20,3 +20,9 @@ Agrega:
 Agrega:
 
 * Se finaliza funcionamiento básico del visualizador
+
+## v.1.2.1 - Nov.7, 2021
+
+Agrega:
+
+* Configuración simple mediante un flag para que la aplicacion web pueda ser accesada desde la red wi-fi local
