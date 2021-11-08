@@ -8,10 +8,6 @@ from dash import Dash, dcc, html, Input, Output
 
 from collections import deque
 
-X = deque(maxlen=20)
-Y = deque(maxlen=20)
-X.append(1)
-Y.append(1)
 
 # app declaration
 app = Dash(__name__)
@@ -157,7 +153,8 @@ def update_table(n):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
 
-    # uncomment for public access from same wifi.
-    # app.run_server(debug=True, host='0.0.0.0', port = 8080)
+    # en 0 se correr privado, en 1 publico
+    public = 0
+    if (public): app.run_server(host="0.0.0.0", port="8050") # de forma publica
+    else: app.run_server(debug=True) # de forma privada
