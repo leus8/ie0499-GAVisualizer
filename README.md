@@ -34,7 +34,7 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 #### Académicas
 
-* Avance II del proyecto eléctrico
+* Borrador final del proyecto eléctrico
 
 #### Desarrollo de software
 
