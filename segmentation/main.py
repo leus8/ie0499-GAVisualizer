@@ -22,7 +22,8 @@ def main():
 
     with open('results.csv', 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["Generacion", "Aptitud promedio", "Mejor Aptitud", "Segunda Mejor Aptitud", "Desviacion estandar", "Duracion Promedio", "Cantidad de segmentos", "Silencio", "Sonido", "Umbral"])
+        writer.writerow(["Generación", "Aptitud promedio", "Mejor Aptitud", "Segunda Mejor Aptitud", "Desviación estándar", "Duración Promedio (s)", "Cantidad de segmentos", "Silencio (s)", "Sonido (s)", "Umbral (s)"])
+        file.flush()
 
         while (eval or first):
             print("\n********************************************************************")
@@ -32,6 +33,8 @@ def main():
             writer.writerow([generation, round(population.avg_fitness), population.pop[population.smallest].fitness, population.pop[population.second].fitness, 
                 population.pop[population.smallest].std_dev, population.pop[population.smallest].avg_duration, population.pop[population.smallest].audios, 
                 round(population.pop[population.smallest].genes[0],2), round(population.pop[population.smallest].genes[1],2) , round(population.pop[population.smallest].genes[2], 2) ])
+
+            file.flush()
 
             eval = population.evaluate()
             population.next_generation()

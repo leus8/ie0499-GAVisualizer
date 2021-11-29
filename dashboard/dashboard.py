@@ -4,8 +4,7 @@
 from os import name
 import pandas as pd
 import plotly.graph_objects as go
-import dash_table
-from dash import Dash, dcc, html, Input, Output
+from dash import Dash, dcc, html, Input, Output, dash_table
 
 
 
@@ -16,16 +15,16 @@ app = Dash(__name__)
 df = pd.read_csv("../segmentation/results.csv", sep=',', header=0)
 
 # extracts the data by column
-generacion = df["Generacion"]
+generacion = df["Generación"]
 apt_promedio = df["Aptitud promedio"]
 mejor_aptitud = df["Mejor Aptitud"]
 seg_mejor_aptitud = ["Segunda Mejor Aptitud"]
-desv_std = df["Desviacion estandar"]
-duracion_prom = df["Duracion Promedio"]
+desv_std = df["Desviación estándar"]
+duracion_prom = df["Duración Promedio (s)"]
 cant_seg = df["Cantidad de segmentos"]
-silencio = df["Silencio"]
-sonido = df["Sonido"]
-umbral = df["Umbral"]
+silencio = df["Silencio (s)"]
+sonido = df["Sonido (s)"]
+umbral = df["Umbral (s)"]
 
 # App layout
 app.layout = html.Div([
@@ -43,12 +42,12 @@ app.layout = html.Div([
                     {"label": "Aptitud promedio", "value": "Aptitud promedio"},
                     {"label": "Mejor aptitud", "value": "Mejor Aptitud"},
                     {"label": "Segunda mejor aptitud", "value": "Segunda Mejor Aptitud"},
-                    {"label": "Desviación estándar", "value": "Desviacion estandar"},
-                    {"label": "Duración promedio", "value": "Duracion Promedio"},
+                    {"label": "Desviación estándar", "value": "Desviación estándar"},
+                    {"label": "Duración promedio (s)", "value": "Duración Promedio (s)"},
                     {"label": "Cantidad de segmentos", "value": "Cantidad de segmentos"},
-                    {"label": "Silencio", "value": "Silencio"},
-                    {"label": "Sonido", "value": "Sonido"},
-                    {"label": "Umbral", "value": "Umbral"}],
+                    {"label": "Silencio (s)", "value": "Silencio (s)"},
+                    {"label": "Sonido (s)", "value": "Sonido (s)"},
+                    {"label": "Umbral (s)", "value": "Umbral (s)"}],
                 multi=False,
                 value="Mejor Aptitud",
                 style={'width': "50%"}
@@ -83,7 +82,7 @@ app.layout = html.Div([
             fixed_rows={ 'headers': True, 'data': 0 },
             virtualization=False,
             style_cell_conditional=[
-                {'if': {'column_id': 'Generacion'},
+                {'if': {'column_id': 'Generación'},
                 'width': '10%', 'textAlign': 'center'},
                 {'if': {'column_id': 'Aptitud promedio'},
                 'width': '10%', 'textAlign': 'center'},
@@ -91,17 +90,17 @@ app.layout = html.Div([
                 'width': '10%', 'textAlign': 'center'},
                 {'if': {'column_id': 'Segunda Mejor Aptitud'},
                 'width': '10%', 'textAlign': 'center'},
-                {'if': {'column_id': 'Desviacion estandar'},
+                {'if': {'column_id': 'Desviación estándar'},
                 'width': '10%', 'textAlign': 'center'},
-                {'if': {'column_id': 'Duracion Promedio'},
+                {'if': {'column_id': 'Duración Promedio (s)'},
                 'width': '10%', 'textAlign': 'center'},
                 {'if': {'column_id': 'Cantidad de segmentos'},
                 'width': '10%', 'textAlign': 'center'},
-                {'if': {'column_id': 'Silencio'},
+                {'if': {'column_id': 'Silencio (s)'},
                 'width': '10%', 'textAlign': 'center'},
-                {'if': {'column_id': 'Sonido'},
+                {'if': {'column_id': 'Sonido (s)'},
                 'width': '10%', 'textAlign': 'center'},
-                {'if': {'column_id': 'Umbral'},
+                {'if': {'column_id': 'Umbral (s)'},
                 'width': '10%', 'textAlign': 'center'},
             ],
         ),
@@ -193,7 +192,7 @@ def update_graph(option_slctd, dff):
     dff = pd.read_csv("../segmentation/results.csv", sep=',', header=0)
 
     # se lee para x los datos de generacion y y con base en el dropdown
-    generacion = dff["Generacion"]
+    generacion = dff["Generación"]
     y_selected = dff[option_slctd]
 
     # se genera la grafica
@@ -233,6 +232,6 @@ def update_table(n):
 if __name__ == '__main__':
 
     # en 0 se correr privado, en 1 publico
-    public = 0
+    public = 1
     if (public): app.run_server(host="0.0.0.0", port="8050") # de forma publica
     else: app.run_server(debug=True) # de forma privada
