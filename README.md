@@ -38,11 +38,8 @@ El CHANGELOG es mantenido en el repositorio de GitHub.
 
 #### Desarrollo de software
 
-> La funcionalidad básica está funcionando
+> Dashboard 99% lista
 
-* Arreglar el redondeo de los valores y dimensiones de las cantidades
-* Agregar sección que muestre cómo utilizar el dashboard
-* Arreglar ejes de las gráficas
 * Agregar un espacio más de gráficas (si sobra tiempo)
 * Mejorar el diseño (si sobra tiempo)
 
